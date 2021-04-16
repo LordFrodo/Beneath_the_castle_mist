@@ -431,6 +431,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orco
       objectReference: {fileID: 0}
+    - target: {fileID: 4827518494758134483, guid: 26a708003583f054bb538f3de3d87192,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6867514507748339889, guid: 26a708003583f054bb538f3de3d87192,
         type: 3}
       propertyPath: m_audioClip
@@ -1407,6 +1412,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasma
       objectReference: {fileID: 0}
+    - target: {fileID: 2021088527774765027, guid: 91989f0f03103854ead6b1dcc4f84c35,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2021088527775095961, guid: 91989f0f03103854ead6b1dcc4f84c35,
         type: 3}
       propertyPath: m_RootOrder
@@ -1466,7 +1476,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 8b3431fa21c2e0741af7e8d1e121351e, type: 3}
     - target: {fileID: 8064141889166010504, guid: 91989f0f03103854ead6b1dcc4f84c35,
         type: 3}
       propertyPath: m_PlayOnAwake
@@ -2315,6 +2325,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Duende
       objectReference: {fileID: 0}
+    - target: {fileID: 8317758343081308280, guid: 6fe7011cfb97db440b5a5c0fcf5b608f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fe7011cfb97db440b5a5c0fcf5b608f, type: 3}
 --- !u!1 &1828868260
@@ -2646,6 +2661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Esqueleto (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5356105835822737006, guid: f8e9d2ac51ed9df48b619aaffe13ebbc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8e9d2ac51ed9df48b619aaffe13ebbc, type: 3}

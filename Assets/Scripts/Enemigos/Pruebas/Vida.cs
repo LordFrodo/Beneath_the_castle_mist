@@ -8,7 +8,7 @@ public class Vida : MonoBehaviour,IColision
      [SerializeField] public Image barra_vida;
     public float valor_vida;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         
         barra_vida.fillAmount = valor_vida;

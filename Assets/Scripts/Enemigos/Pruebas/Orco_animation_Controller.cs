@@ -12,6 +12,7 @@ public class Orco_animation_Controller : Enemy_Animation_Controller
         if (Vector3.Distance(enemigo.transform.position, jugador.transform.position) < distancia && vida_enemigo.barra_vida.fillAmount > 0.3)
         {
             tiempo += Time.deltaTime;
+            if(Walking_Audio!=null)Walking_Audio(true);
 
             animator.SetBool("Walking", false);
             
@@ -26,10 +27,12 @@ public class Orco_animation_Controller : Enemy_Animation_Controller
         else if (Vector3.Distance(enemigo.transform.position, jugador.transform.position) > distancia && vida_enemigo.barra_vida.fillAmount > 0.3)
         {
             animator.SetBool("Walking", true);
+            if (Walking_Audio != null) Walking_Audio(true);
         }
         else if (Vector3.Distance(enemigo.transform.position, jugador.transform.position) > distancia && vida_enemigo.barra_vida.fillAmount < 0.3&&vida_enemigo.barra_vida.fillAmount>0)
         {
             animator.SetBool("Walking", false);
+            if (Walking_Audio != null) Walking_Audio(false);
             animator.SetBool("Shield", true);
         }
         else if(Vector3.Distance(enemigo.transform.position, jugador.transform.position) < distancia && vida_enemigo.barra_vida.fillAmount < 0.3 && vida_enemigo.barra_vida.fillAmount > 0)
@@ -37,6 +40,7 @@ public class Orco_animation_Controller : Enemy_Animation_Controller
             tiempo += Time.deltaTime;
 
             animator.SetBool("Walking", false);
+            if (Walking_Audio != null) Walking_Audio(false);
             animator.SetBool("Shield", true);
             if (tiempo > 3f)
             {
